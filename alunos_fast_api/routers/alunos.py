@@ -4,7 +4,23 @@ from schemas.alunos import Aluno
 
 router = APIRouter()
 
-list_alunos = {}
+list_alunos = {
+  "1": {
+    "nome": "Luis Henrique",
+    "idade": 21,
+    "email": "luis@gmail.com",
+    "curso": "Engenharia da Computação",
+    "periodo": 6,
+    "cidade": "Uberlândia",
+    "estado": "MG",
+    "pais": "Brasil"
+  },
+  "2": {
+    "nome": "Fernando ",
+    "idade": 20,
+    "curso": "Engenharia da Computação"
+  }  
+}
 
 #Read
 @router.get("/alunos")
